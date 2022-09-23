@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+button {
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 3px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    outline: thick double #32a1ce;
+}
+
+button:focus {
+    outline: none;
+    overflow: hidden;
+}
+
+.circle {
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%) scale(1);
+    animation: scale 1s ease-in-out;
+}
+
+@keyframes scale {
+    to {
+        transform: scale(100);
+    }
+}
+
+
+/* <span class="circle" style="top: 50px; left: 50px"></span> */
